@@ -518,7 +518,7 @@ const Search = {
 
     let summary = document.createElement("div");
     summary.classList.add("context");
-    summary.innerText = top + text.substr(startWithContext, 240).trim() + tail;
+    summary.textContent = top + text.substr(startWithContext, 240).trim() + tail;
 
     highlightWords.forEach((highlightWord) =>
       _highlightText(summary, highlightWord, "highlighted")
